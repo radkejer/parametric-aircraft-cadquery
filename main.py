@@ -91,7 +91,7 @@ def build_aircraft(cfg):
     return assy
 
 def main():
-    cfg = yaml.safe_load(open("params/example_aircraft.yaml"))
+    cfg = yaml.safe_load(open("example_aircraft.yaml"))
     print("Building aircraft...")
     assy = build_aircraft(cfg)
     Path("output").mkdir(exist_ok=True)
